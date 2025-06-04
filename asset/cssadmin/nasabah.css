@@ -1,0 +1,100 @@
+:root {
+  /* color */
+  --biru-gelap: #164863;
+  --biru: #164863;
+  --biru-terang: #9bbec8;
+  --putih: #fff;
+  --abu-abu: #687780;
+  --hitam: #000;
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+  --font-bold: 700;
+  --font-normal: 200;
+  --font-size-title: clamp(30px, 3.5vw, 6rem); /* 55px */
+  --font-size-subtitle: clamp(20px, 3.5vw, 4rem); /* 40px */
+  --font-size-text: clamp(14px, 2.5vw, 1rem);
+  --font-size-small-text: 0.8125rem; /* 13px */
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  list-style: none;
+  border: none;
+  margin: 0;
+  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ///////////////////// */
+
+.main-content {
+  /* flex-grow: 1; */
+  margin-left: 280px;
+  padding-top: 130px;
+}
+
+.tambahdata {
+  border: 1px solid black;
+  width: 130px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center; /* Memusatkan isi tombol secara horizontal */
+  font-weight: bold;
+  background-color: #f9f9f9; /* Warna latar belakang */
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none; /* Menghapus garis bawah dari link */
+  color: black; /* Warna teks */
+}
+
+/* /////////////////////////////// */
+
+.container-profil {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.box {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 150px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #194452;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 948px) {
+  .main-content {
+    margin: 0 20px;
+  }
+}
+@media only screen and (max-width: 648px) {
+  .main-content {
+    margin: 0 20px;
+  }
+  .container-profil {
+    width: 400px;
+    margin: auto;
+    justify-content: center;
+  }
+}

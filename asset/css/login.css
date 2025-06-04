@@ -1,0 +1,90 @@
+:root {
+  --birug: #164863;
+  --biru: #427d9d;
+  --birut: #9bbec8;
+  --putih: #fff;
+  --abu-abu: #687780;
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  /* background-image: url('../img/register.png'); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(155, 190, 200);
+  background: linear-gradient(47deg, rgba(155, 190, 200, 1) 0%, rgba(22, 72, 99, 1) 100%);
+}
+
+.container {
+  width: 90%; /* Ubah lebar container agar lebih responsif */
+  max-width: 400px; /* Lebar maksimum konten */
+  padding: 20px;
+  background-color: var(--putih);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-box {
+  text-align: center;
+}
+
+.form-box img {
+  margin-bottom: 20px;
+  max-width: 100%; /* Buat gambar responsif */
+}
+
+.input-box {
+  margin-bottom: 15px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.input-box span {
+  font-size: 12px;
+  display: flex;
+  justify-content: left;
+}
+
+.input-box span a {
+  color: #333;
+  font-weight: 700;
+}
+
+button {
+  background-color: var(--birug);
+  color: var(--putih);
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: var(--biru);
+}
+
+/* Responsif */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%; /* Ubah lebar container untuk layar kecil */
+  }
+}

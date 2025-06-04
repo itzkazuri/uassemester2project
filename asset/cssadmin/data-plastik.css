@@ -1,0 +1,134 @@
+:root {
+  /* color */
+  --biru-gelap: #164863;
+  --biru: #427d9d;
+  --biru-terang: #9bbec8;
+  --putih: #fff;
+  --abu-abu: #687780;
+  --hitam: #000;
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+  --font-bold: 700;
+  --font-normal: 200;
+  --font-size-title: clamp(30px, 3.5vw, 6rem); /* 55px */
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  list-style: none;
+  border: none;
+  margin: 0;
+  height: 1800px;
+  font-family: 'Poppins';
+}
+
+/* ///////////////////// */
+
+.main-content {
+  flex-grow: 1;
+  margin-left: 280px;
+  padding-top: 130px;
+}
+.body-tabel {
+  overflow-x: auto;
+  
+
+}
+h1 {
+  color: #164863;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+
+
+.tambahdata {
+  border: 1px solid black;
+  width: 130px;
+
+  text-align: center;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center; /* Memusatkan isi tombol secara horizontal */
+  font-weight: bold;
+  background-color: #f9f9f9; /* Warna latar belakang */
+}
+
+.editkategor {
+  
+  width:130px; 
+  padding:8px;
+  text-align: center;
+ 
+}
+
+.table-container {
+  width: 500px;
+  padding-top: 30px;
+  padding-left: 30px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  padding: 8px;
+  font-size: 12px;
+  border: 1px solid black;
+  text-align: left;
+}
+
+.table-container th {
+  font-weight: var(--font-bold);
+  background-color: #c4c4c4;
+}
+
+.table-container a {
+  text-decoration: none;
+}
+
+.table-container .pensil {
+  width: 19px;
+  height: 19px;
+}
+
+.table-container svg {
+  vertical-align: middle;
+}
+
+.borderilang {
+  text-align: center;
+  font-weight: bold;
+}
+.pensil {
+  margin-right: 10px;
+}
+a {
+  text-decoration: none; /* Menghapus garis bawah dari link */
+  color: black; /* Warna teks */
+}
+
+@media only screen and (max-width: 948px) {
+  .main-content {
+    margin: 0 20px;
+  }
+  .table-container {
+    width: 700px;
+    padding-top: 30px;
+    padding-left: 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

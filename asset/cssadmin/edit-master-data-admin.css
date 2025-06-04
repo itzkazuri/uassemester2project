@@ -1,0 +1,247 @@
+:root {
+  /* color */
+  --biru-gelap: #164863;
+  --biru: #164863;
+  --biru-terang: #9bbec8;
+  --putih: #fff;
+  --abu-abu: #687780;
+  --hitam: #000;
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+  --font-bold: 700;
+  --font-normal: 200;
+  --font-size-title: clamp(30px, 3.5vw, 6rem); /* 55px */
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  list-style: none;
+  border: none;
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+/* ///////////////////// */
+
+.main-content {
+  flex-grow: 1;
+  padding-top: 80px; /* Adjust padding to clear the fixed navbar */
+  /* Allow main content to scroll */
+  margin-left: 280px;
+  padding-top: 130px;
+}
+
+/* ################# */
+
+.headeredit {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: small;
+}
+.headeredit p {
+  font-family: var(--font-family);
+  font-size: var(--font-size-text);
+}
+.menu-btn {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.body-form {
+  font-size: 12px;
+  margin: auto;
+  max-width: 500px;
+}
+.menu-btn {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.body-content {
+  width: 90%;
+  max-width: 700px;
+  border: 1px solid var(--hitam);
+}
+.form-row-flex {
+  padding: 10px 5px;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+}
+.form-row-flex label {
+  font-size: var(--font-size-text);
+  font-family: var(--font-family);
+  font-weight: var(--font-bold);
+}
+.form-grup-flex input[type='number'] {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 30px;
+}
+.form-grup .ukuran {
+  padding: 3px;
+  font-size: 14px;
+}
+.form-grup .ukuran option {
+  font-size: var(--font-size-text);
+}
+.form-row {
+  padding: 10px 5px;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+}
+.form-rowss {
+  padding: 10px 5px;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+}
+.form-row .form-grup {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 4px;
+}
+.form-rowss .form-grup {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 4px;
+}
+.form-row .form-grups {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 4px;
+}
+.form-grup input {
+  padding: 3px;
+}
+.form-grups input {
+  padding: 3px;
+}
+.form-grup label {
+  padding: 3px;
+  font-weight: var(--font-bold);
+  font-family: var(--font-family);
+  font-size: var(--font-size-text);
+}
+.form-grups label {
+  padding: 3px;
+  font-weight: var(--font-bold);
+  font-family: var(--font-family);
+  font-size: var(--font-size-text);
+}
+.conatin-harga {
+  display: flex;
+  gap: 4px;
+  width: 140px;
+}
+.conatin-harga input {
+  width: 100%;
+}
+.conatin-harga label {
+  font-weight: var(--font-bold);
+  font-family: var(--font-family);
+  font-size: 10px;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.form-grup .kategoriukuran {
+  padding: 3px;
+}
+.form-grup .jenisjenis {
+  padding: 3px;
+}
+.form-grup .jenisjenis option {
+  font-size: 14px;
+}
+.form-buttons {
+  display: flex;
+  justify-content: end;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.btn-save {
+  /* Atas: 10px, Kanan: 20px, Bawah: 0px, Kiri: 40px */
+  padding: 10px 30px 10px 30px;
+  font-weight: bold;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 30px;
+}
+
+.btn-cancel {
+  /* Atas: 10px, Kanan: 20px, Bawah: 0px, Kiri: 40px */
+  padding: 10px 30px 10px 30px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 100px;
+}
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-simpan {
+  padding: 10px 30px;
+  font-weight: bold;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.btn-batal {
+  padding: 10px 30px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 948px) {
+  .main-content {
+    margin-left: 0;
+    padding-top: 145px;
+  }
+  .body-content {
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 876px) {
+  .form-row {
+    padding: 10px 5px;
+    width: 100%;
+    justify-content: space-around;
+    display: block;
+  }
+  .form-rowss {
+    padding: 10px 5px;
+    width: 100%;
+    justify-content: space-around;
+    display: block;
+  }
+  .form-row-flex {
+    padding: 10px 5px;
+    width: 100%;
+    justify-content: space-around;
+    display: block;
+  }
+  .body-form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,356 @@
+:root {
+  /* color */
+  --biru-gelap: #164863;
+  --biru: #427d9d;
+  --biru-terang: #9bbec8;
+  --putih: #fff;
+  --abu-abu: #687780;
+  --font-family: 'Poppins', sans-serif;
+  --font-size: 16px;
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+  --font-size-title: clamp(30px, 3.5vw, 6rem); /* 55px */
+  --font-size-subtitle: clamp(20px, 3.5vw, 4rem); /* 40px */
+  --font-size-text: clamp(11px, 2.5vw, 0.8rem);
+  --font-size-small-text: 0.8125rem; /* 13px */
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-style: normal;
+  box-sizing: border-box;
+}
+.description {
+  padding: 100px 0 50px 0;
+  display: flex;
+  border-radius: 20px;
+  justify-content: space-around;
+  background-color: var(--biru);
+  color: var(--putih);
+  border-radius: 20px;
+}
+.description img {
+  width: 20%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.conten-description {
+  width: 50%;
+  border-radius: 20px;
+}
+.conten-description h1 {
+  width: 200px;
+  text-align: center;
+  padding: 20px 0;
+ 
+}
+.conten-description p {
+  text-align: justify;
+}
+
+.typesOfCans {
+  margin-top: 200px;
+}
+.titleTypesOfCans {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+.titleTypesOfCans h2 {
+  font-size: var(--font-size-subtitle);
+  width: 500px;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  font-weight: 700;
+  color: var(--biru-gelap);
+}
+.titleTypesOfCans span {
+  top: 5px;
+  right: 1%;
+  position: absolute;
+  width: 100px;
+  height: 34px;
+  background-color: var(--biru-gelap);
+  justify-content: end;
+  border: 1px solid black;
+}
+
+.contentListType {
+  width: 88%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contentListType > .listTypeCan {
+  width: 370px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 0 10px;
+  height: 263px;
+  margin: 60px 0 0 0;
+  position: relative;
+  transition: all 1s;
+  cursor: pointer;
+}
+.contentListType > .listTypeCan:hover {
+  box-shadow: 0px 1px 12px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 12px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 12px -1px rgba(0, 0, 0, 0.75);
+}
+
+.contentListType > .listTypeCan > h3 {
+  margin: 20px 0;
+  font-weight: 700;
+  color: var(--biru);
+}
+.contentListType > .listTypeCan > p {
+  margin: 15px 0;
+  text-align: justify;
+  color: var(--biru);
+}
+.contentListType > .listTypeCan > img {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  z-index: -7;
+}
+.list-harga {
+  margin-top: 200px;
+}
+.harga-titel {
+  display: flex;
+  position: relative;
+}
+
+.harga-titel h2 {
+  font-size: var(--font-size-subtitle);
+  width: 400px;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  color: var(--biru-gelap);
+}
+.harga-titel span {
+  top: 9px;
+  left: 5%;
+  position: absolute;
+  width: 100px;
+  height: 34px;
+  background-color: var(--biru-gelap);
+  justify-content: start;
+  border: 1px solid black;
+}
+.body-harga {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.data-list-harga {
+  width: 370px;
+  text-align: center;
+  margin: 30px auto 0 auto;
+  cursor: pointer;
+}
+.body-harga .gambar-list-harga {
+  border: 1px solid #000;
+}
+.body-harga > .data-list-harga {
+  width: 30%;
+  height: 175px;
+  position: relative;
+  margin: 20px 0;
+  padding: 20px 10px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  transition: height 0.5s;
+  overflow: hidden;
+}
+.body-harga > .data-list-harga.active {
+  height: auto;
+}
+.body-harga > .data-list-harga img {
+  width: 150px;
+  height: 110px;
+}
+.body-harga > .data-list-harga .img-toggel {
+  width: 20px;
+  height: auto;
+  top: 60px;
+  right: 30px;
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+.img-toggel.rotate {
+  transform: rotate(180deg);
+}
+.body-harga > .data-list-harga .icon-drop {
+  cursor: pointer;
+}
+.data-list-harga .dropdown-detail-harga {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  transition: max-height 0.5s ease;
+  overflow: hidden;
+  max-height: 0;
+  margin-top: 20px;
+  padding: 5px 0;
+}
+.data-list-harga .dropdown-detail-harga .d-ukuran :nth-child(1) {
+  font-weight: 700;
+  padding: 5px 0;
+}
+.data-list-harga .dropdown-detail-harga .d-harga :nth-child(1) {
+  font-weight: 700;
+  padding: 5px 0;
+}
+.body-harga > .body-data-list-b {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.body-harga > .body-data-list-b .data-list-harga {
+  width: 32%;
+  height: 100px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 30px 10px;
+  margin: 60px 0;
+  position: relative;
+}
+.body-harga > .body-data-list-b .data-list-harga :nth-child(2) {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media only screen and (max-width: 1292px) {
+  .titleTypesOfCans h2 {
+    font-size: var(--font-size-subtitle);
+    width: 300px;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 700;
+    color: var(--biru-gelap);
+  }
+}
+@media only screen and (max-width: 848px) {
+  .description {
+    position: relative;
+    z-index: -9;
+  }
+  .description img {
+    width: 200px;
+    height: auto;
+    opacity: 0.3;
+    top: 71px;
+    z-index: -3;
+    position: absolute;
+  }
+  .conten-description p {
+    font-size: var(--font-size-text);
+    z-index: 7;
+  }
+  .titleTypesOfCans h2 {
+    width: 220px;
+    text-align: center;
+    padding-left: 0;
+    margin: 0 auto;
+    z-index: 7;
+  }
+  .titleTypesOfCans span {
+    display: none;
+  }
+
+  .harga-titel {
+    width: 100%;
+  }
+
+  .harga-titel h2 {
+    width: auto;
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+  }
+  .harga-titel span {
+    display: none;
+  }
+
+  .contentListType {
+    width: 100%;
+    padding: 0 5px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  /* contentListType > .listTypeCan {
+    width: 370px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 10px;
+    height: 263px;
+    margin: 60px 0 0 0;
+    position: relative;
+    transition: 1s;
+    cursor: pointer;
+  } */
+  .contentListType .listTypeCan {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .listTypeCan img {
+    opacity: 0.3;
+  }
+  .body-harga {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 5px;
+  }
+  .data-list-harga {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .description {
+    position: relative;
+  }
+  .conten-description {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .description img {
+    width: 200px;
+    height: auto;
+    opacity: 0.3;
+    top: 71px;
+    position: absolute;
+  }
+
+  .body-harga {
+    display: block;
+    width: 100%;
+    padding: 0 5px;
+  }
+  .body-harga > .data-list-harga {
+    width: 100%;
+  }
+  .contentListType .listTypeCan {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+  }
+}

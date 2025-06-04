@@ -1,0 +1,270 @@
+:root {
+  /* color */
+  --biru-gelap: #164863;
+  --biru: #427d9d;
+  --biru-terang: #9bbec8;
+  --putih: #fff;
+  --abu-abu: #687780;
+  --merah: #830000;
+  --hitama: #000;
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+  --font-size-title: clamp(30px, 3.5vw, 6rem); /* 55px */
+  --font-size-subtitle: clamp(20px, 3.5vw, 4rem); /* 40px */
+  --font-size-text: clamp(14px, 2.5vw, 1rem);
+  --font-size-small-text: 0.8125rem; /* 13px */
+  --profile-size-subtitle: clamp(13px, 3.5vw, 1rem);
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: var(--font-family);
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: var(--putih);
+} */
+
+.body-profile {
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  font-size: var(--profile-size-subtitle);
+}
+
+.profile {
+  width: 80%;
+  max-width: 900px;
+  border-radius: 10px;
+  padding: 60p 20px 30px 20px;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+.img-profile {
+  display: none;
+}
+
+.container-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-info {
+  padding: 0 5px;
+  width: 70%;
+  text-align: left;
+}
+
+.profile-info label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.profile-info input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid var(--abu-abu);
+  font-size: var(--profile-size-subtitle);
+  color: #333;
+}
+
+.name-input {
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid var(--abu-abu);
+}
+
+.gender-options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.gender-options button {
+  flex: 1;
+  font-size: var(--profile-size-subtitle);
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid var(--biru-gelap);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.gender-options button.active {
+  color: var(--putih);
+  background-color: var(--biru-gelap);
+}
+
+.profile-pic img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid var(--hitama);
+}
+
+.profile-infos {
+  padding: 0 5px;
+  margin-top: 20px;
+}
+
+.profile-infos label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.profile-infos input {
+  width: calc(100% - 20px);
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid var(--abu-abu);
+  font-size: var(--profile-size-subtitle);
+  color: #333;
+}
+.profile-infos input[type='email'] {
+  width: 100%; /* Adjusted width to stay within container */
+  max-width: 600px;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #000;
+  border-radius: 15px;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.profile-actions {
+
+  display: flex;
+  margin-left: 40%;
+justify-content: end;
+  margin-top: 20px;
+}
+
+.profile-actions .btn {
+  flex: 1;
+  padding: 10px;
+  margin-right: 20px;
+  border: none;
+  border: 1px solid var(--abu-abu);
+  font-size: var(--profile-size-subtitle);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.profile-actions .btn.cancel {
+  color: var(--hitama);
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
+.profile-actions .btn.save {
+  background-color: var(--biru-gelap);
+  color: var(--putih);
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
+.profile-actions .btn.logout {
+  background-color: var(--merah);
+  color: var(--putih);
+  padding-right: 45px;
+  padding-left: 45px;
+}
+@media only screen and (max-width: 848px) {
+  .body-profile {
+    font-size: var(--font-size-text);
+  }
+  .profile-info input {
+    font-size: var(--profile-size-text);
+  }
+  .profile-infos input {
+    font-size: var(--font-size-text);
+  }
+  .profile-actions .btn {
+    font-size: var(--font-size-text);
+  }
+  .gender-options button {
+    flex: 1;
+    font-size: var(--font-size-text);
+  }
+  .profile-pic {
+    display: none;
+  }
+
+  .profile-info {
+    width: 100%;
+    text-align: left;
+  }
+
+  .header-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-profile {
+    display: flex;
+  }
+  .profile {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .profile {
+    width: 100%;
+  }
+  .container-profile {
+    padding-top: 30px;
+  }
+  .img-profile {
+    padding-top: 30px;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+  }
+  .img-profile img {
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #ddd;
+  }
+  .profile-actions {
+    width: 100%;
+    display: flex;
+    margin-left: 0;
+    justify-content: end;
+    margin-top: 20px;
+  }
+  .profile-infos {
+    width: 100%;
+  }
+  .profile-infos input {
+    width: 100%;
+  }
+  .profile-infos input[type='email'] {
+    border: none;
+    width: 100%;
+    max-width: 100%;
+    border-bottom: 1px solid var(--abu-abu);
+    border-radius: 0;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+  }
+}

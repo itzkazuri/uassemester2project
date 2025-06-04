@@ -1,0 +1,175 @@
+:root {
+  /* color */
+  --biru-gelap: #164863;
+  --biru: #164863;
+  --biru-terang: #9bbec8;
+  --putih: #fff;
+  --abu-abu: #687780;
+  --hitam: #000;
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+  --font-bold: 700;
+  --font-normal: 200;
+  --font-size-title: clamp(30px, 3.5vw, 6rem); /* 55px */
+  --font-size-subtitle: clamp(20px, 3.5vw, 4rem); /* 40px */
+  --font-size-text: clamp(14px, 2.5vw, 1rem);
+  --font-size-small-text: 0.8125rem; /* 13px */
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  list-style: none;
+  border: none;
+  margin: 0;
+  font-family: 'Poppins';
+}
+.container-body {
+  margin-left: 280px;
+  padding-top: 150px;
+}
+.container-flex {
+  display: flex;
+  width: 80%;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+.body-data-profile {
+  width: 250px;
+  height: 150px;
+  text-align: center;
+  border-radius: 15px;
+}
+.box-profile {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--hitam);
+}
+.body-data-profile img {
+  width: 50px;
+  height: 50px;
+  background-color: #194452;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.btn-pilih {
+  background-color: #27b435;
+  padding: 3px 13px;
+  border: none;
+  border-radius: 5px;
+}
+.body-jumlah-sampah {
+  display: flex;
+  width: 300px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+.body-jumlah-sampah img {
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  height: auto;
+}
+.jumlah-sampah {
+  margin-top: 30px;
+}
+
+
+.container-flexs {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+
+
+.data-sampah-dikumpulkan .tambah {
+  width: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #27b435;
+}
+.deatil-data-sampah {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid var(--hitam);
+  background-color: #164863;
+  color: #fff;
+}
+.deatil-saldo {
+  width: 300px;
+  height: auto;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--hitam);
+}
+.body-btn-saldo {
+  display: flex;
+  padding: 0 40px;
+  margin: auto;
+  justify-content: space-between;
+  text-decoration: none;
+  
+}
+.btn-saldo {
+  background-color: #e6750c;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+ 
+}
+
+
+.tambah{
+  color: white;
+  text-decoration: none;
+}
+
+.btn-pilih {
+  color: white;
+}
+
+
+@media only screen and (max-width: 948px) {
+  .container-body {
+    margin-left: 0;
+    padding-left: 30px;
+  }
+}
+@media only screen and (max-width: 748px) {
+  .container-flex {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .body-data-profile {
+    margin-bottom: 30px;
+  }
+  .body-jumlah-sampah {
+    margin-bottom: 30px;
+  }
+  .container-flexs {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .data-sampah-dikumpulkan {
+    margin-bottom: 30px;
+  }
+  .data-saldo {
+    margin-bottom: 30px;
+  }
+}

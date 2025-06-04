@@ -1,0 +1,108 @@
+:root {
+  /* color */
+  --biru-gelap: #164863;
+  --biru: #427d9d;
+  --biru-terang: #9bbec8;
+  --putih: #fff;
+  --abu-abu: #687780;
+  --font-family: 'Poppins', sans-serif;
+  --font-size: 16px;
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+  --font-size-title: clamp(30px, 3.5vw, 6rem); /* 55px */
+  --font-size-subtitle: clamp(17px, 3.5vw, 2rem); /* 40px */
+  --font-size-text: clamp(13px, 2.5vw, 0.8rem);
+  --font-size-small-text: 0.8125rem; /* 13px */
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+.container-history {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+  
+}
+.collection-summary {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  padding: 30px 10px;
+  color: var(--putih);
+  font-size: var(--font-size-subtitle);
+  background-color: var(--biru-gelap);
+  border-radius: 10px;
+}
+.collection-summary h1 {
+  font-size: var(--font-size-title);
+}
+.collection-summary p {
+  font-size: var(--font-size-text);
+}
+
+.history h2 {
+  color: var(--putih);
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-size: var(--font-size-subtitle);
+  background-color: var(--biru-gelap);
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.tb-history {
+  /* width: 100%; */
+  width: 1200px;
+  font-size: var(--font-size-text);
+  margin: 0 auto 100px auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #c4c4c4;
+  color: #000;
+}
+.pemberitahuan {
+  margin-top: 10px;
+  font-size: var(--font-size-text);
+  background-color: var(--biru-gelap);
+  color: var(--putih);
+}
+.pemberitahuan p {
+  width: 100%;
+  padding: 60px 0;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  text-align: justify;
+}
+
+.pemberitahuan p span {
+  color: red;
+}

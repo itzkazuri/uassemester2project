@@ -1,0 +1,90 @@
+:root {
+  /* color */
+  --biru-gelap: #164863;
+  --biru: #164863;
+  --biru-terang: #9bbec8;
+  --putih: #fff;
+  --abu-abu: #687780;
+  --hitam: #000;
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+  --font-bold: 700;
+  --font-normal: 200;
+  --font-size-title: clamp(30px, 3.5vw, 6rem); /* 55px */
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  list-style: none;
+  border: none;
+  margin: 0;
+  font-family: 'Poppins';
+}
+/* ///////////////////// */
+
+.main-content {
+  flex-grow: 1;
+  padding-top: 80px; /* Adjust padding to clear the fixed navbar */
+  overflow-y: auto; /* Allow main content to scroll */
+  overflow-x: auto;
+  margin-left: 280px;
+  padding-top: 130px;
+}
+
+.borderilang {
+  text-align: start;
+}
+
+.table-container {
+  overflow-x: auto; /* Aktifkan scrolling horizontal */
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.data-table {
+  width: 100%; /* Lebar tabel 100% agar memanjang ke kanan */
+  border-collapse: collapse; /* Gabungkan border sel pada tabel */
+}
+
+td {
+  border: 1px solid black; /* Berikan garis border untuk setiap sel */
+  padding: 5px;
+  text-align: center; /* Arahkan teks ke kiri di dalam sel */
+  font-size: 12px;
+}
+
+th {
+  background-color: #c4c4c4; /* Berikan latar belakang untuk header kolom */
+  font-weight: var(--font-bold); /* Berikan tebal pada teks header */
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid black; /* Berikan garis border untuk setiap sel */
+  padding: 8px; /* Berikan padding untuk ruang di dalam sel */
+}
+
+a {
+  text-decoration: none;
+}
+
+.pensil {
+  margin-right: 20%;
+  text-decoration: none;
+}
+@media only screen and (max-width: 948px) {
+  .main-content {
+    margin-left: 0;
+    padding-left: 30px;
+  }
+
+  .table-container {
+    overflow-x: auto; /* Aktifkan scrolling horizontal */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+  }
+}

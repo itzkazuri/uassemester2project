@@ -1,0 +1,191 @@
+:root {
+  /* color */
+  --biru-gelap: #164863;
+  --biru: #427d9d;
+  --biru-terang: #9bbec8;
+  --putih: #fff;
+  --abu-abu: #687780;
+  --merah: #830000;
+  --hitam: #000;
+  --font-family: 'Poppins', sans-serif;
+  --font-size: 16px;
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+  --font-size-title: clamp(30px, 3.5vw, 6rem); /* 55px */
+  --font-size-subtitle: clamp(17px, 3.5vw, 2rem); /* 40px */
+  --font-size-text: clamp(13px, 2.5vw, 0.8rem);
+  --font-size-small-text: 0.8125rem; /* 13px */
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-style: normal;
+  box-sizing: border-box;
+}
+.container-tabunga {
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0 0 0;
+}
+.balance {
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  padding: 20px 5px;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 1px solid var(--hitam);
+}
+.balance h2 {
+  margin: 0;
+  font-size: var(--font-size-title);
+  color: var(--biru-gelap);
+}
+.balance p {
+  margin: 10px 0 0;
+  font-size: var(--font-size-text);
+  font-weight: bold;
+}
+
+.withdrawal-info {
+  background-color: var(--biru-gelap);
+  color: var(--putih);
+  width: 100%;
+  max-width: 700px;
+  padding: 30px 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.info-box-titel {
+  display: flex;
+}
+.info-box-titel h3 {
+  font-size: var(--font-size-subtitle);
+}
+.info-box p {
+  text-align: justify;
+  font-size: var(--font-size-text);
+}
+.info-box-titel img {
+  width: 40px;
+  height: 40px;
+}
+.info-box-titel {
+  font-size: var(--font-size-text);
+}
+.withdrawal-info .info-box h3 img {
+  padding-top: 5px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: var(--abu-abu);
+  color: #fff;
+}
+.pemberitahuan {
+  margin-top: 10px;
+  font-size: var(--font-size-text);
+  background-color: var(--biru-gelap);
+  color: var(--putih);
+}
+.pemberitahuan p {
+  width: 100%;
+  padding: 60px 0;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  text-align: justify;
+}
+
+.pemberitahuan p span {
+  color: red;
+}
+
+.table-tabungan {
+  overflow-x: auto;
+  max-width: 990px;
+  margin: auto;
+  position: relative;
+  padding: 50px 20px 0 20px;
+  border-radius: 10px;
+}
+.table-tabungan h3 {
+  padding-bottom: 30px;
+}
+.table-tabungan table {
+  /* width: 90%; */
+  width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+.body-btn-tabungan {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  justify-content: end;
+}
+.body-btn-tabungann {
+  display: none;
+  width: 100%;
+  justify-content: end;
+}
+.btn-tabungan {
+  background-color: var(--biru-gelap);
+  color: var(--putih);
+  border: none;
+  border: 1px solid var(--hitama);
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 848px) {
+  .form-group {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .form-group .rupiah {
+    display: none;
+  }
+  .form-group input[type='date'] {
+    display: block;
+    padding: 9px;
+    width: 80%;
+    max-width: 200px;
+  }
+
+  .form-group input {
+    margin: 20px 0;
+  }
+  .body-btn-tabungan {
+    display: none;
+  }
+  .body-btn-tabungann {
+    margin-top: 50px;
+    display: flex;
+    padding-right: 40px;
+  }
+  .info-box-titel img {
+    padding-top: 4px;
+    width: 25px;
+    height: 25px;
+  }
+}

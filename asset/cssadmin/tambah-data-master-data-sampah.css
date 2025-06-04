@@ -1,0 +1,144 @@
+:root {
+  /* color */
+  --biru-gelap: #164863;
+  --biru: #164863;
+  --biru-terang: #9bbec8;
+  --putih: #fff;
+  --abu-abu: #687780;
+  --hitam: #000;
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+  --font-bold: 700;
+  --font-normal: 200;
+  --font-size-title: clamp(30px, 3.5vw, 6rem); /* 55px */
+  --font-size-subtitle: clamp(20px, 3.5vw, 4rem); /* 40px */
+  --font-size-text: clamp(14px, 2.5vw, 1rem);
+  --font-size-small-text: 0.8125rem; /* 13px */
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  list-style: none;
+  border: none;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/* ################# */
+.main-content {
+  flex-grow: 1;
+  margin-left: 280px;
+  padding-top: 130px;
+}
+.headeredit {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: small;
+}
+
+.menu-btn {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.content {
+  background-color: white;
+  width: 500px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.form-container {
+  padding: 5px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  width: 90%;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form-group input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.harga-input {
+  display: flex;
+  align-items: center;
+}
+
+.harga-input span {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.save-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.cancel-button {
+  background-color: #ff4c4c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 948px) {
+  .main-content {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 901px) {
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+  }
+  .content {
+    background-color: white;
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: auto;
+  }
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+}

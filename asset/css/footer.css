@@ -1,0 +1,102 @@
+:root {
+  /* color */
+  --biru-gelap: #164863;
+  --biru: #427d9d;
+  --biru-terang: #9bbec8;
+  --putih: #fff;
+  --abu-abu: #687780;
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+  --font-size-title: clamp(30px, 3.5vw, 6rem); /* 55px */
+  --font-size-subtitle: clamp(20px, 3.5vw, 4rem); /* 40px */
+  --font-size-text: clamp(14px, 2.5vw, 1rem);
+  --font-size-small-text: 0.8125rem; /* 13px */
+  /* Spacing */
+  --spacing-container-padding: 8%;
+  --spacing-section-padding: 6.25rem; /* 100px */
+  --spacing-card-gap: 5.625rem; /* 90px */
+  --spacing-about-margin: 4.375rem; /* 70px */
+  --spacing-navbar-padding: 1.25rem; /* 20px */
+  --spacing-footer-padding: 0.625rem; /* 10px */
+  --spacing-header-padding: 8.125rem; /* 130px */
+  --spacing-description-margin: 15%;
+  --spacing-box-margin: 70%;
+  --spacing-box-width: 6.125rem; /* 98px */
+  --spacing-box-height: 1.9375rem; /* 31px */
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: var(--font-family);
+  box-sizing: border-box;
+}
+
+/* Footer */
+.bottom-footer {
+  background-color: var(--biru);
+  width: 100%;
+  padding: var(--spacing-footer-padding) 0;
+}
+
+.social-media {
+  width: 80%;
+  gap: 20px;
+  margin: 10px auto 0 auto;
+  display: flex;
+  justify-content: end;
+}
+
+.bottom-footer > .copyright {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.bottom-footer > .copyright .logo {
+  width: 175px;
+  height: 66px;
+}
+
+.bottom-footer > .copyright > p {
+  padding: 25px 0;
+  margin-right: 180px;
+  font-size: var(--font-size-text);
+  width: 60%;
+  color: var(--putih);
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1010px) {
+  .bottom-footer > .copyright > p {
+    width: 60%;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 842px) {
+  .bottom-footer > .copyright .logo {
+    width: 40%;
+    height: 40%;
+  }
+  .social-media .icon {
+    width: 7%;
+    height: 7%;
+  }
+  .bottom-footer > .copyright {
+    display: block;
+    width: 90%;
+  }
+  .bottom-footer > .copyright > p {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 590px) {
+}

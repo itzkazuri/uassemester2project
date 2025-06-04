@@ -1,0 +1,133 @@
+:root {
+  /* color */
+  --biru-gelap: #164863;
+  --biru: #164863;
+  --biru-terang: #9bbec8;
+  --putih: #fff;
+  --abu-abu: #687780;
+  --hitam: #000;
+  /* Typography */
+  --font-family: 'Poppins', sans-serif;
+  --font-bold: 700;
+  --font-normal: 200;
+  --font-size-title: clamp(30px, 3.5vw, 6rem); /* 55px */
+  --font-size-subtitle: clamp(20px, 3.5vw, 4rem); /* 40px */
+  --font-size-text: clamp(14px, 2.5vw, 1rem);
+  --font-size-small-text: 0.8125rem; /* 13px */
+}
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  list-style: none;
+  border: none;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+/* ################# */
+.main-content {
+  flex-grow: 1;
+  margin-left: 280px;
+  padding-top: 130px;
+}
+.headeredit {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: small;
+}
+
+.menu-btn {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.content {
+  background-color: white;
+  height: 300px;
+  width: 500px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 80px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  min-width: 100px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+input[type='text'] {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 4px;
+  min-width: 70%;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: start;
+  margin-top: 30px;
+}
+
+.btn-save {
+  /* Atas: 10px, Kanan: 20px, Bawah: 0px, Kiri: 40px */
+  padding: 10px 30px 10px 30px;
+  font-weight: bold;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-cancel {
+  /* Atas: 10px, Kanan: 20px, Bawah: 0px, Kiri: 40px */
+  padding: 10px 30px 10px 30px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 948px) {
+  .main-content {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 901px) {
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+  }
+  .content {
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: auto;
+  }
+}
